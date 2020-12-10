@@ -8,11 +8,12 @@
 
 
 # USER STORY
-
+```
 AS A developer
 I WANT a walk-through of the codebase
 SO THAT I can use it as a starting point for a new project
-
+``` 
+```
 GIVEN a Node.js application using Sequelize and Passport
 WHEN I run “npm install”
 THEN I can get dependencies 
@@ -22,3 +23,4 @@ WHEN I define a model of a JS file in models directory.
 THEN I can use db.{NewModelName} with Sequelize method
 WHEN I open my terminal and run node server and navigate to localhost:8080
 THEN I can use the app
+```
