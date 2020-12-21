@@ -6,7 +6,7 @@ var path      = require('path');
 let { Sequelize, DataTypes } = require('sequelize'); //[NEW VERSION]
 var basename  = path.basename(module.filename); // return current FileName (index.js)
 var env       = process.env.NODE_ENV || 'development';  // select NODE_ENV or "development" environment 
-var config    = require(__dirname + '/../config/config.json')[env]; // return DataBase information from env property of config.json
+var config    = require(__dirname + '/../config/config.js')[env]; // return DataBase information from env property of config.js
 var db        = {};
 
 // Create an instance of Squelize class
@@ -35,6 +35,6 @@ Object.keys(db).forEach(function(modelName) {
 });
 
 db.sequelize = sequelize;
-// db.Sequelize = Sequelize;
+db.Sequelize = Sequelize;
 
 module.exports = db;
